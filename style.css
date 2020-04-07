@@ -35,6 +35,64 @@ margin-right: 5px;
     transform: rotate(45deg);
 }
 
+main {
+    height: calc(100vh - 130px);
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.galleria-persone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow-y: auto;
+    height: 100%;
+    max-width: 1350px;
+}
+
+.wrap-right, .wrap-left {
+ align-self: center;
+}
+
+.fa-caret-right {
+    color: #6890ff;
+    font-size: 40px;
+}
+
+.fa-caret-left {
+    color: grey;
+    font-size: 40px;
+}
+
+
+.persona {
+    border: 2px solid black;
+    position: relative;
+}
+
+.nome {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    padding: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 80%;
+}
+
+body > main > div.galleria-persone > div:last-child {
+    border: 2px solid yellow;
+}
+
+body > main > div.galleria-persone > div:nth-child(25) > span > i {
+    display: none;
+}
 
 footer {
     height: 80px;
